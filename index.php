@@ -1,6 +1,12 @@
-<?php require_once("includes/header.php")?>
+    <!-- Header -->
+    <?php 
+        session_start();
+        require_once("includes/header.php") 
+    ?>
+
     <!-- Navbar -->
-    <?php require_once("includes/navbar.php")?>
+    <?php require_once("includes/navbar.php") ?>
+
 
     <!-- Hero Section -->
     <div class="container-fluid bg-primary text-white text-center py-5">
@@ -8,6 +14,7 @@
         <p class="lead">Your one-stop destination for amazing deals</p>
         <a href="#products" class="btn btn-light btn-lg">Shop Now</a>
     </div>
+
 
     <!-- Product Categories -->
     <div class="container content my-5">
@@ -42,6 +49,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- Featured Products Section -->
     <div class="container content my-5" id="products">
@@ -89,9 +97,12 @@
             </div>
         </div>
     </div>
-    
-    <!-- Footer -->
-    <?php require_once("includes/footer.php")?>
-    
 
-    <?php require_once("includes/footer.php")?>
+    <!-- Footer -->
+    <?php require_once("includes/footer.php") ?>
+
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

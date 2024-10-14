@@ -1,10 +1,12 @@
-<?php require_once("includes/header.php")?>
+    <!-- Header -->
+    <?php require_once("includes/header.php") ?>
 
     <!-- Navbar -->
-    <?php require_once("includes/navbar.php")?>
+    <?php require_once("includes/navbar.php") ?>
+
 
     <!-- Shopping Cart -->
-    <div class="container content my-5">
+    <div class="container mt-5">
         <div class="row">
             <!-- Shopping Cart Items -->
             <div class="col-md-8">
@@ -41,6 +43,7 @@
                 </table>
             </div>
 
+
             <!-- Cart Summary and Payment -->
             <div class="col-md-4">
                 <div class="card">
@@ -53,6 +56,7 @@
                         <hr>
                         <h5>Total: <span class="float-end">$140.00</span></h5>
 
+
                         <!-- Payment Method Selection -->
                         <div class="mt-4">
                             <label for="paymentMethod" class="form-label">Select Payment Method</label>
@@ -63,11 +67,13 @@
                             </select>
                         </div>
 
+
                         <!-- Payment Details -->
                         <div class="mt-3">
                             <label for="cardNumber" class="form-label">Card/Account Number</label>
                             <input type="text" class="form-control" id="cardNumber" placeholder="Enter your card or account number" required>
                         </div>
+
 
                         <!-- Confirm Payment Button -->
                         <div class="d-grid gap-2 mt-4">
@@ -78,7 +84,10 @@
             </div>
         </div>
     </div>
-    
-   
 
-    <?php require_once("includes/footer.php")?>
+    <?php require_once("includes/footer.php") ?>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
