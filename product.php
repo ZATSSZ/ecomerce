@@ -1,57 +1,79 @@
- <!-- Header -->
- <?php require_once("includes/header.php") ?>
+  <!-- Header -->
+  <?php require_once("includes/header.php") ?>
 
 <!-- Navbar -->
 <?php require_once("includes/navbar.php") ?>
 
 
-<!-- Registration Form -->
-<div class="container my-5">
-    <div class="row justify-content-center">
+<!-- Product Details -->
+<div class="container content my-5">
+    <div class="row">
+        <!-- Product Image -->
         <div class="col-md-6">
-            <div class="card">
-                <div class="card-header bg-primary text-white text-center">
-                    <h4>Create Your Account</h4>
-                </div>
-                <div class="card-body">
-                    <?php if (isset($_GET["success"])){ ?> 
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        <strong><?php echo $_GET["success"]; ?></strong>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    <?php   } ?>
-                    
-                    <?php if (isset($_GET["error"])){ ?> 
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <strong><?php echo $_GET["error"]; ?></strong>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    <?php   } ?>
+            <img src="https://via.placeholder.com/500" alt="Product Image" class="img-fluid">
+        </div>
 
-                    <form action="authRegister.php" method="POST">
-                        <div class="mb-3">
-                            <label for="fullName" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Create a password" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="confirmPassword" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary">Register</button>
-                        </div>
-                    </form>
+        <!-- Product Information -->
+        <div class="col-md-6">
+            <h2>Product Name</h2>
+            <p class="lead">$50.00</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis, orci sit amet luctus malesuada, felis nisi vehicula velit, at sodales neque purus eget metus. Praesent dictum feugiat purus.</p>
+
+            <!-- Quantity Selection -->
+            <div class="mb-3">
+                <label for="quantity" class="form-label">Quantity</label>
+                <input type="number" id="quantity" class="form-control" value="1" min="1">
+            </div>
+
+            <!-- Add to Cart Button -->
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary btn-lg">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Related Products (Optional) -->
+<div class="container content my-5">
+    <h3>Related Products</h3>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://via.placeholder.com/200" class="card-img-top" alt="Related Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Related Product 1</h5>
+                    <p class="card-text">$30.00</p>
+                    <a href="#" class="btn btn-primary">View Product</a>
                 </div>
-                <div class="card-footer text-center">
-                    <p>Already have an account? <a href="login.html" class="text-primary">Login here</a></p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://via.placeholder.com/200" class="card-img-top" alt="Related Product 2">
+                <div class="card-body">
+                    <h5 class="card-title">Related Product 2</h5>
+                    <p class="card-text">$40.00</p>
+                    <a href="#" class="btn btn-primary">View Product</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://via.placeholder.com/200" class="card-img-top" alt="Related Product 3">
+                <div class="card-body">
+                    <h5 class="card-title">Related Product 3</h5>
+                    <p class="card-text">$35.00</p>
+                    <a href="#" class="btn btn-primary">View Product</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://via.placeholder.com/200" class="card-img-top" alt="Related Product 4">
+                <div class="card-body">
+                    <h5 class="card-title">Related Product 4</h5>
+                    <p class="card-text">$45.00</p>
+                    <a href="#" class="btn btn-primary">View Product</a>
                 </div>
             </div>
         </div>

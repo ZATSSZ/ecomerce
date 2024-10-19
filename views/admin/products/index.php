@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product List - MyShop</title>
+    <title>Product Details - MyShop</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
     <!-- Navbar with Dropdown for User Account (Admin) -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -40,7 +39,19 @@
             </div>
         </div>
     </nav>
-
+    
+   
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <h1 class="display-1 text-danger">401</h1>
+            <h2 class="mb-3">Unauthorized Access</h2>
+            <p class="lead">Sorry, you are not authorized to view this page.</p>
+            <a href="login.html" class="btn btn-primary">Go to Login</a>
+        </div>
+    </div> 
+    
+       
+    
     <!-- Page Header -->
     <div class="container mt-5">
         <div class="d-flex justify-content-between align-items-center">
@@ -53,7 +64,7 @@
     </div>
 
     <!-- Product Cards Container -->
-    <div class="container mt-3">
+    <div class="container content mt-3">
         <div class="row">
             <!-- Sample Product Card -->
             <!-- Loop through each product and generate a card dynamically -->
@@ -65,6 +76,8 @@
                         <p class="card-text">Category: Electronics</p>
                         <p class="card-text">Price: $100</p>
                         <p class="card-text">Stock: 50</p>
+                        <p class="card-text">Sold: 50</p>
+                        <p class="card-text">profit: 50</p>
                         <a href="#" class="btn btn-primary">Edit Product</a>
                         <a href="#" class="btn btn-danger">Delete Product</a>
                     </div>
@@ -80,6 +93,8 @@
                         <p class="card-text">Category: Fashion</p>
                         <p class="card-text">Price: $50</p>
                         <p class="card-text">Stock: 25</p>
+                        <p class="card-text">Sold: 50</p>
+                        <p class="card-text">profit: 50</p>
                         <a href="#" class="btn btn-primary">Edit Product</a>
                         <a href="#" class="btn btn-danger">Delete Product</a>
                     </div>
@@ -95,6 +110,8 @@
                         <p class="card-text">Category: Home Appliances</p>
                         <p class="card-text">Price: $200</p>
                         <p class="card-text">Stock: 100</p>
+                        <p class="card-text">Sold: 50</p>
+                        <p class="card-text">profit: 50</p>
                         <a href="#" class="btn btn-primary">Edit Product</a>
                         <a href="#" class="btn btn-danger">Delete Product</a>
                     </div>
@@ -105,7 +122,10 @@
         </div>
     </div>
 
+    
+
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
