@@ -1,3 +1,4 @@
+<?php require_once($_SERVER["DOCUMENT_ROOT"]."/app/config/Directories.php"); ?>
  <!-- Header -->
  <?php require_once("includes/header.php") ?>
 
