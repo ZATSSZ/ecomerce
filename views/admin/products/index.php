@@ -70,5 +70,5 @@ include(ROOT_DIR."app/product/get_products.php");
     </div>
 
     
-    <?php require_once("includes/footer.php") ?>
+    <?php require_once(ROOT_DIR."includes/footer.php") ?>
     
