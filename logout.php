@@ -1,14 +1,22 @@
+<!-- Header -->
 <?php 
     session_start();
     require_once("includes/header.php");
-    if($_SERVER["REQUEST_METHOD"] == "POST") {
-        $_SESSION = [];
-        session_destroy();
-    }
+        //check if session["error"] exists
+    session_unset(); // Unset all session variables
+    session_destroy(); // Destroy the session completely
+
+header("Location: login.php"); // Redirect to the login page after logging out
+exit();
 
     ?>
 
+
+
+
+    <!-- Navbar -->
     <?php require_once("includes/navbar.php") ?>
+
 
     <div class="container vh-100 d-flex justify-content-center align-items-center">
         <div class="card text-center shadow p-3" style="width: 24rem;">
@@ -20,6 +28,8 @@
         </div>
     </div>
 
-
-
 <?php require_once("includes/footer.php") ?>
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
