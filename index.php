@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 session_start();
 require_once($_SERVER["DOCUMENT_ROOT"]."/app/config/Directories.php");
 include(ROOT_DIR."app/product/get_products.php");
@@ -15,16 +17,9 @@ require_once(ROOT_DIR."includes/header.php");
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar with Dropdown for User Account (Admin) -->
-    
-    <!-- Header -->
-    <?php 
-        
-        require_once("includes\header.php") 
-    ?>
-
+   
     <!-- Navbar -->
-    <?php require_once("includes\\navbar.php") ?>
+    <?php require_once("includes/navbar.php") ?>
 
 
     <!-- Hero Section -->
