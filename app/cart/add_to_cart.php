@@ -7,9 +7,10 @@ if(!isset($_SESSION)){
 require_once(__DIR__."/../config/Directories.php"); //to handle folder specific path
 include("../config/DatabaseConnect.php"); //to access database connection
 
-if(!isset($_SESSION["user_id"])){
-    header("location: ".BASE_URL."login.php");
-    exit;
+if (!isset($_SESSION["user_id"])) {
+    $_SESSION["error"] = "Please login to view your cart";
+    header("Location: login.php");
+    exit();
 }
 
 $db = new DatabaseConnect(); //make a new database instance

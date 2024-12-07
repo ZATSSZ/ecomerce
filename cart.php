@@ -1,6 +1,12 @@
 <?php
     session_start();
     require_once($_SERVER["DOCUMENT_ROOT"]. "/app/config/Directories.php");
+
+    if (!isset($_SESSION["user_id"])) {
+        $_SESSION["error"] = "Please login to view your cart";
+        header("Location: login.php");
+        exit();
+    }
     
     include(ROOT_DIR."app/config/DatabaseConnect.php");
     $db = new DatabaseConnect();
